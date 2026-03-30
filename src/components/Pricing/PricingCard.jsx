@@ -6,7 +6,7 @@ const PricingCard = ({ pricingData }) => {
 
   return (
     <div
-      className={`relative rounded-2xl border p-5 md:p-5 lg:p-7 h-full flex flex-col ${
+      className={`relative rounded-2xl border-2 hover:border-violet-500 hover:scale-[1.01] transition-colors duration-500 p-5 md:p-5 lg:p-7 h-full flex flex-col ${
         highlighted
           ? "bg-linear-to-br from-[#4F39F6] to-[#9514FA] border-transparent text-white"
           : "bg-[#F3F5FA] border-[#E4E6EB] text-[#1F2937]"
@@ -54,7 +54,7 @@ const PricingCard = ({ pricingData }) => {
       </ul>
 
       <button
-        className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold transition-colors duration-500 ${
+        className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold hover:scale-[1.01] transition-colors duration-500 ${
           highlighted
             ? "bg-white text-[#5A2CF1] hover:bg-white/90"
             : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]"

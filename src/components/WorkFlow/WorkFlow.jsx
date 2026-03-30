@@ -12,10 +12,10 @@ const WorkFlow = () => {
         </p>
 
         <div className="mt-7 md:mt-8 lg:mt-9 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4">
-          <button className="w-full md:w-auto px-6 md:px-7 lg:px-8 py-2.5 md:py-3 rounded-full bg-white text-[#4F39F6] font-semibold text-sm md:text-base lg:text-lg hover:bg-white/90 transition-colors duration-300">
-            Explore Products
+          <button className="w-full md:w-auto px-6 md:px-7 lg:px-8 py-2.5 md:py-3 rounded-full bg-white font-semibold text-sm md:text-base lg:text-lg hover:bg-white/90 hover:scale-[1.01] transition-colors duration-300">
+            <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Explore Products</span>
           </button>
-          <button className="w-full md:w-auto px-6 md:px-7 lg:px-8 py-2.5 md:py-3 rounded-full border-2 border-white text-white font-semibold text-sm md:text-base lg:text-lg hover:bg-white hover:text-[#4F39F6] transition-colors duration-300">
+          <button className="w-full md:w-auto px-6 md:px-7 lg:px-8 py-2.5 md:py-3 rounded-full border-2 border-white text-white font-semibold text-sm md:text-base lg:text-lg hover:bg-white/30 hover:scale-[1.01] transition-colors duration-300">
             View Pricing
           </button>
         </div>

@@ -1,6 +1,6 @@
 const StepCard = ({ stepData }) => {
   return (
-    <div className="relative rounded-2xl border-2 border-zinc-200 bg-white px-5 py-8 md:px-6 md:py-6 lg:px-8 lg:py-12 text-center">
+    <div className="relative rounded-2xl border-2 border-zinc-200 hover:border-violet-500 hover:scale-[1.01] transition-colors duration-500 bg-white px-5 py-8 md:px-6 md:py-6 lg:px-8 lg:py-12 text-center">
       <span className="absolute right-4 top-4 md:right-5 md:top-5 h-8 w-8 md:h-9 md:w-9 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-md md:text-lg font-bold flex items-center justify-center">
         {stepData.id}
       </span>

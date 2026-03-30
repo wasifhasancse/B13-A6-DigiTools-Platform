@@ -29,7 +29,7 @@ const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
         : "bg-[#FDEFCB] text-[#BB6A06]";
 
   return (
-    <div className="relative rounded-2xl border-2 border-[#E4E6EB] bg-white p-5 md:p-5 lg:p-6 h-full flex flex-col">
+    <div className="relative rounded-2xl border-2 border-[#E4E6EB] hover:border-violet-500 transition-colors duration-500 bg-white p-5 md:p-5 lg:p-6 h-full flex flex-col hover:scale-[1.01]">
       <span
         className={`absolute top-4 right-4 rounded-full px-3 py-1 text-xs md:text-sm font-medium ${tagStyle}`}
       >
@@ -70,7 +70,7 @@ const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
 
       <button
         onClick={manageBuyNow}
-        className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]"
+        className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold hover:scale-[1.01] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]"
       >
         {selectedBuyNow ? "Selected" : "Buy Now"}
       </button>

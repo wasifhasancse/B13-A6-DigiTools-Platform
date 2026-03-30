@@ -2,7 +2,7 @@ const NavBar = ({ selectedItems }) => {
   const totalPrice = selectedItems.reduce((sum,item)=>sum+item.price,0)
   return (
     <nav>
-      <div className="navbar container mx-auto bg-base-100 shadow-sm px-2 sm:px-4 md:px-5 py-2 min-h-0">
+      <div className="navbar sticky container mx-auto bg-base-100 shadow-sm px-2 sm:px-4 md:px-5 py-2 min-h-0">
         <div className="navbar-start gap-1 sm:gap-2">
           <div className="dropdown">
             <div
@@ -113,10 +113,10 @@ const NavBar = ({ selectedItems }) => {
           </div>
 
           <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
-            <button className="text-sm sm:text-base md:text-lg font-semibold hover:text-violet-600 transition-colors duration-300 whitespace-nowrap">
+            <button className="text-sm sm:text-base md:text-lg font-semibold hover:text-violet-600 transition-colors duration-300 cursor-pointer hover:scale-[1.01]">
               Login
             </button>
-            <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-sm sm:text-base md:text-lg text-white font-semibold px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 whitespace-nowrap hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500">
+            <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-sm sm:text-base md:text-lg text-white font-semibold px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 whitespace-nowrap hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500 cursor-pointer hover:scale-[1.01]">
               Get Started
             </button>
           </div>
