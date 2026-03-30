@@ -21,7 +21,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-3">
+        <div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
           {pricingDatas.map((pricingData) => (
             <PricingCard key={pricingData.id} pricingData={pricingData} />
           ))}

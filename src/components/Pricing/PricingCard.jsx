@@ -54,7 +54,7 @@ const PricingCard = ({ pricingData }) => {
       </ul>
 
       <button
-        className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold transition-colors duration-300 ${
+        className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold transition-colors duration-500 ${
           highlighted
             ? "bg-white text-[#5A2CF1] hover:bg-white/90"
             : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]"

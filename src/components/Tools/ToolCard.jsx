@@ -32,7 +32,7 @@ const ToolCard = ({ toolData }) => {
       </p>
 
       <div className="mt-4 md:mt-5 flex items-end">
-        <span className="text-5xl md:text-5xl lg:text-6xl font-bold leading-none text-[#111827]">
+        <span className="text-4xl md:text-4xl lg:text-5xl font-bold leading-none text-[#111827]">
           ${price}
         </span>
         <span className="mb-1 ml-1 text-xl md:text-xl lg:text-2xl text-[#6B7A90] capitalize">
@@ -51,7 +51,7 @@ const ToolCard = ({ toolData }) => {
         ))}
       </ul>
 
-      <button className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-300 hover:from-[#9514FA] hover:to-[#4F39F6]">
+      <button className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]">
         Buy Now
       </button>
     </div>
