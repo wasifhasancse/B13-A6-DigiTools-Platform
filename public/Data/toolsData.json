@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate blog posts, ad copy, emails, and captions in seconds with advanced AI writing tools.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://i.ibb.co.com/QFJ83hjv/package.pnghttps://i.ibb.co.com/gM1yX89v/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Get ready-to-use templates for social posts, presentations, flyers, and branding materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "https://i.ibb.co.com/jPG3tqXS/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access a large collection of royalty-free photos, videos, illustrations, and graphics.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "icon": "https://i.ibb.co.com/C3j31Cc0/operation.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive workflows and connect your tools with powerful prebuilt automations.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "icon": "https://i.ibb.co.com/C3j31Cc0/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create polished resumes and cover letters with templates designed for ATS compatibility.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/dwBC6JXW/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Build high-performing social campaigns with templates, assets, and scheduling support.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "https://i.ibb.co.com/Z6wdLrKD/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "E-Commerce Starter Bundle",
+    "description": "Launch and manage your online store with product templates, checkout tools, and sales widgets.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Storefront components",
+      "Checkout optimization",
+      "Sales reporting"
+    ],
+    "icon": "https://i.ibb.co.com/C3j31Cc0/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Portfolio Showcase Kit",
+    "description": "Present your work professionally with portfolio layouts, galleries, and client-ready sections.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Responsive layouts",
+      "Project gallery blocks",
+      "Easy customization"
+    ],
+    "icon": "https://i.ibb.co.com/jPG3tqXS/design-tool.png"
+  }
+]
