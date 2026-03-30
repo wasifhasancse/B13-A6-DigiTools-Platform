@@ -18,7 +18,6 @@ const toolsDataPromise = getToolsDataPromise();
 function App() {
 
   const [selectedItems, setSelectedItems] = useState([])
-  console.log(selectedItems)
 
   return (
     <>
