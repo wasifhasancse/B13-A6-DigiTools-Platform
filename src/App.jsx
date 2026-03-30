@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <Hero/>
+      <Hero />
+
     </>
   )
 }
