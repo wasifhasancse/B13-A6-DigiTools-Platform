@@ -4,6 +4,7 @@ import { LuCheck } from "react-icons/lu";
 const ToolCard = ({ toolData,selectedItems, setSelectedItems }) => {
   const [selectedBuyNow, setSelectedBuyNow] = useState(false);
   const manageBuyNow = () => {
+    
     setSelectedBuyNow(true);
     setSelectedItems([...selectedItems, toolData])
   };

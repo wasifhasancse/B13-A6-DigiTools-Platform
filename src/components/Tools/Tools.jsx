@@ -1,9 +1,9 @@
 import { use, useState } from "react";
-import ToolCard from "./ToolCard";
 import Cart from "../Cart/Cart";
+import ToolCard from "./ToolCard";
 
 const Tools = ({ toolsDatasPromise, selectedItems, setSelectedItems }) => {
-  const [tabSelected, setTabSelected] = useState('products')
+  const [tabSelected, setTabSelected] = useState("products");
 
   const toolsData = use(toolsDatasPromise);
   return (
@@ -20,35 +20,44 @@ const Tools = ({ toolsDatasPromise, selectedItems, setSelectedItems }) => {
         </div>
 
         <div className="mt-8 md:mt-10 flex justify-center">
-          <div className="w-full max-w-xs md:max-w-sm lg:max-w-md rounded-full border border-[#E5E7EB] bg-[#F9FAFB] p-1 grid grid-cols-2 gap-1">
-            <button onClick={()=>setTabSelected('products')}
+          <div className="w-full max-w-72 md:max-w-80 lg:max-w-96 rounded-full border border-[#E5E7EB] bg-[#F9FAFB] p-1 grid grid-cols-2 gap-1">
+            <button
+              onClick={() => setTabSelected("products")}
               type="button"
-              className="rounded-full px-4 md:px-5 lg:px-6 py-2 md:py-2.5 lg:py-3 text-sm md:text-base lg:text-xl font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-[0_8px_18px_rgba(95,52,246,0.25)]"
+              className="rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-[0_6px_14px_rgba(95,52,246,0.22)]"
             >
               Products
             </button>
 
-            <button onClick={()=>setTabSelected('cart')}
+            <button
+              onClick={() => setTabSelected("cart")}
               type="button"
-              className="rounded-full px-4 md:px-5 lg:px-6 py-2 md:py-2.5 lg:py-3 text-sm md:text-base lg:text-xl font-semibold text-[#2F1F58]"
+              className="rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold text-[#2F1F58]"
             >
               Cart ({selectedItems.length})
             </button>
           </div>
         </div>
 
-
-        {tabSelected=='products'?<div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {toolsData.map((toolData) => (
-            <ToolCard
-              key={toolData.id}
-              toolData={toolData}
+        {tabSelected == "products" ? (
+          <div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
+            {toolsData.map((toolData) => (
+              <ToolCard
+                key={toolData.id}
+                toolData={toolData}
+                selectedItems={selectedItems}
+                setSelectedItems={setSelectedItems}
+              />
+            ))}
+          </div>
+        ) : (
+          <div>
+            <Cart
               selectedItems={selectedItems}
               setSelectedItems={setSelectedItems}
             />
-          ))}
-        </div> : <div><Cart selectedItems={selectedItems} /></div>}
-
+          </div>
+        )}
       </div>
     </section>
   );
