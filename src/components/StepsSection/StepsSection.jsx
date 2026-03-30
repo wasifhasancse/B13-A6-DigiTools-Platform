@@ -11,7 +11,7 @@ const StepsSection = () => {
   const stepsData = use(stepsDataPromise);
 
   return (
-    <section className="bg-[#F3F5FA] py-10 md:py-14 lg:py-16">
+    <section className="bg-[#F3F5FA] py-10 md:py-16 lg:py-28">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#111827] leading-tight">
@@ -26,7 +26,6 @@ const StepsSection = () => {
           {stepsData.map((stepData) => (
             <StepCard key={stepData.id} stepData={stepData} />
           ))}
-
         </div>
       </div>
     </section>
