@@ -21,11 +21,11 @@ const Hero = () => {
           software—all in one place. Start creating faster today.
         </p>
 
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-3 lg:gap-4">
-          <button className="w-full py-3 px-6 md:py-2.5 md:px-5 lg:py-3 lg:px-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white font-semibold text-sm md:text-sm lg:text-base hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500">
+        <div className="flex flex-col md:flex-row items-center gap-3 md:gap-3 lg:gap-4">
+          <button className="py-3 px-6 md:py-2.5 md:px-5 lg:py-3 lg:px-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white font-semibold text-sm md:text-sm lg:text-base hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500">
             Explore Products
           </button>
-          <button className="w-full flex items-center justify-center gap-2 py-3 px-6 md:py-2.5 md:px-5 lg:py-3 lg:px-6 rounded-full border-2 border-violet-500 font-semibold text-sm md:text-sm lg:text-base text-violet-600 hover:bg-violet-50 transition-colors duration-300">
+          <button className=" flex items-center justify-center gap-2 py-3 px-6 md:py-2.5 md:px-5 lg:py-3 lg:px-6 rounded-full border-2 border-violet-500 font-semibold text-sm md:text-sm lg:text-base text-violet-600 hover:bg-violet-50 transition-colors duration-300">
             <CiPlay1 className="text-lg" /> Watch Demo
           </button>
         </div>
