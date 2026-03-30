@@ -1,6 +1,14 @@
-import React from 'react';
+import { use } from "react";
+import PricingCard from "./PricingCard";
+
+const getPricingDatasPromise = async () => {
+  const getPricingDatasResponce = await fetch("/Data/pricingData.json");
+  return await getPricingDatasResponce.json();
+};
+const pricingDatasPromise = getPricingDatasPromise();
 
 const Pricing = () => {
+  const pricingDatas = use(pricingDatasPromise);
   return (
     <section className="py-10 md:py-16 lg:py-28">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -14,7 +22,9 @@ const Pricing = () => {
         </div>
 
         <div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-3">
-          
+          {pricingDatas.map((pricingData) => (
+            <PricingCard key={pricingData.id} pricingData={pricingData} />
+          ))}
         </div>
       </div>
     </section>
