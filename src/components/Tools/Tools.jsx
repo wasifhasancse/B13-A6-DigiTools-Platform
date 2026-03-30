@@ -1,7 +1,7 @@
 import { use } from "react";
 import ToolCard from "./ToolCard";
 
-const Tools = ({ toolsDatasPromise }) => {
+const Tools = ({ toolsDatasPromise, selectedItems, setSelectedItems }) => {
   const toolsData = use(toolsDatasPromise);
   return (
     <section className="py-10 md:py-16 lg:py-28">
@@ -18,7 +18,12 @@ const Tools = ({ toolsDatasPromise }) => {
 
         <div className="mt-10 md:mt-12 lg:mt-14 grid grid-cols-1 gap-5 md:gap-6 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
           {toolsData.map((toolData) => (
-            <ToolCard key={toolData.id} toolData={toolData} />
+            <ToolCard
+              key={toolData.id}
+              toolData={toolData}
+              selectedItems={selectedItems}
+              setSelectedItems={setSelectedItems}
+            />
           ))}
         </div>
       </div>

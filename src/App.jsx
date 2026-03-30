@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
@@ -16,9 +16,13 @@ const getToolsDataPromise = async () => {
 const toolsDataPromise = getToolsDataPromise();
 
 function App() {
+
+  const [selectedItems, setSelectedItems] = useState([])
+  console.log(selectedItems)
+
   return (
     <>
-      <NavBar />
+      <NavBar selectedItems={selectedItems}/>
       <Hero />
       <StatsSection />
       <Suspense
@@ -28,7 +32,7 @@ function App() {
           </div>
         }
       >
-        <Tools toolsDatasPromise={toolsDataPromise} />
+        <Tools toolsDatasPromise={toolsDataPromise} selectedItems={selectedItems} setSelectedItems={setSelectedItems} />
       </Suspense>
 
       <StepsSection />
