@@ -1,13 +1,13 @@
 const NavBar = () => {
   return (
     <nav>
-      <div className="navbar container mx-auto bg-base-100 shadow-sm">
-        <div className="navbar-start">
+      <div className="navbar container mx-auto bg-base-100 shadow-sm px-2 sm:px-4 md:px-5 py-2 min-h-0">
+        <div className="navbar-start gap-1 sm:gap-2">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className="pr-2.5 lg:hidden pl-0 hover:text-violet-600 transition-colors duration-300"
+              className="pr-1.5 sm:pr-2.5 lg:hidden pl-0 hover:text-violet-600 transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,27 +26,27 @@ const NavBar = () => {
               </svg>
             </div>
             <ul
-              tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-56 p-2 shadow"
             >
               <li className="hover:text-violet-600 transition-colors duration-300">
-              <a>Products</a>
-            </li>
-            <li className="hover:text-violet-600 transition-colors duration-300">
-              <a>Features</a>
-            </li>
-            <li className="hover:text-violet-600 transition-colors duration-300">
-              <a>Pricing</a>
-            </li>
-            <li className="hover:text-violet-600 transition-colors duration-300">
-              <a>Testimonials</a>
-            </li>
-            <li className="hover:text-violet-600 transition-colors duration-300">
-              <a>FAQ</a>
-            </li>
+                <a>Products</a>
+              </li>
+              <li className="hover:text-violet-600 transition-colors duration-300">
+                <a>Features</a>
+              </li>
+              <li className="hover:text-violet-600 transition-colors duration-300">
+                <a>Pricing</a>
+              </li>
+              <li className="hover:text-violet-600 transition-colors duration-300">
+                <a>Testimonials</a>
+              </li>
+              <li className="hover:text-violet-600 transition-colors duration-300">
+                <a>FAQ</a>
+              </li>
             </ul>
           </div>
-          <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-black">
+          <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl font-black">
             DigiTools
           </a>
         </div>
@@ -69,12 +69,12 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-4">
+        <div className="navbar-end gap-1 sm:gap-2 md:gap-4">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle transition-colors duration-300 hover:text-violet-600"
+              className="btn btn-ghost btn-circle h-9 w-9 sm:h-10 sm:w-10 transition-colors duration-300 hover:text-violet-600"
             >
               <div className="indicator">
                 <svg
@@ -111,11 +111,11 @@ const NavBar = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-4">
-            <button className="text-lg font-semibold hover:text-violet-600 transition-colors duration-300">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
+            <button className="text-sm sm:text-base md:text-lg font-semibold hover:text-violet-600 transition-colors duration-300 whitespace-nowrap">
               Login
             </button>
-            <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-lg text-white font-semibold hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500">
+            <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-sm sm:text-base md:text-lg text-white font-semibold px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 whitespace-nowrap hover:from-[#9514FA] hover:to-[#4F39F6] transition-colors duration-500">
               Get Started
             </button>
           </div>
