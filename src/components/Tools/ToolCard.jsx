@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { LuCheck } from "react-icons/lu";
+import { toast } from "react-toastify";
 
-const ToolCard = ({ toolData,selectedItems, setSelectedItems }) => {
+const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
   const [selectedBuyNow, setSelectedBuyNow] = useState(false);
   const manageBuyNow = () => {
-    
+    const checkSelected = selectedItems.find(
+      (check) => toolData.id == check.id,
+    );
+
+    if (checkSelected) {
+      toast.error("Item already in cart!");
+      return;
+    }
     setSelectedBuyNow(true);
-    setSelectedItems([...selectedItems, toolData])
+    setSelectedItems([...selectedItems, toolData]);
+    toast.success("Item added to cart successfully!");
   };
 
   const { name, description, price, period, tag, tagType, features, icon } =
@@ -59,7 +68,10 @@ const ToolCard = ({ toolData,selectedItems, setSelectedItems }) => {
         ))}
       </ul>
 
-      <button onClick={manageBuyNow} className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]">
+      <button
+        onClick={manageBuyNow}
+        className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]"
+      >
         {selectedBuyNow ? "Selected" : "Buy Now"}
       </button>
     </div>

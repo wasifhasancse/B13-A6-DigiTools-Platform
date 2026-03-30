@@ -24,7 +24,7 @@ const Tools = ({ toolsDatasPromise, selectedItems, setSelectedItems }) => {
             <button
               onClick={() => setTabSelected("products")}
               type="button"
-              className="rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-[0_6px_14px_rgba(95,52,246,0.22)]"
+              className={`rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold ${tabSelected=='products'? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]':'text-[#2F1F58]'} transition-colors duration-500`}
             >
               Products
             </button>
@@ -32,7 +32,7 @@ const Tools = ({ toolsDatasPromise, selectedItems, setSelectedItems }) => {
             <button
               onClick={() => setTabSelected("cart")}
               type="button"
-              className="rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold text-[#2F1F58]"
+              className={`rounded-full px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-2.5 text-sm md:text-sm lg:text-base font-semibold ${tabSelected=='cart'? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:from-[#9514FA] hover:to-[#4F39F6]':'text-[#2F1F58]'} transition-colors duration-500`}
             >
               Cart ({selectedItems.length})
             </button>
