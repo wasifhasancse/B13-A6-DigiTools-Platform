@@ -1,6 +1,6 @@
 const WorkFlow = () => {
   return (
-    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-10 md:py-14 lg:py-16 px-4 md:px-6 lg:px-8 text-center text-white">
+    <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-10 md:py-16 lg:py-28 px-4 md:px-6 lg:px-8 text-center text-white">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
           Ready To Transform Your Workflow?

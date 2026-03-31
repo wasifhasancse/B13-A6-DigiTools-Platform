@@ -60,7 +60,7 @@ const Cart = ({ selectedItems, setSelectedItems }) => {
                 <button
                   onClick={() => manageDelete(item)}
                   type="button"
-                  className="text-xs md:text-sm lg:text-base font-semibold hover:border-2 border-violet-400 py-1 px-2.5 rounded-full text-[#FF4F87] hover:text-violet-500 transition-colors duration-500"
+                  className="text-xs md:text-sm lg:text-base font-semibold hover:border-2 border-red-400 py-1 px-2.5 rounded-full text-[#FF4F87] hover:text-red-500 transition-colors duration-500"
                 >
                   Remove
                 </button>

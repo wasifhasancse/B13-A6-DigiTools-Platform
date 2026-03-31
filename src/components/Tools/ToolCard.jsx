@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LuCheck } from "react-icons/lu";
 import { toast } from "react-toastify";
 
@@ -17,6 +17,10 @@ const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
     setSelectedItems([...selectedItems, toolData]);
     toast.success("Item added to cart successfully!");
   };
+
+  useEffect(() => {
+  selectedItems.map(item => {item.id==toolData.id && setSelectedBuyNow(true)})
+},[toolData, selectedItems])
 
   const { name, description, price, period, tag, tagType, features, icon } =
     toolData;
@@ -72,7 +76,7 @@ const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
         onClick={manageBuyNow}
         className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold hover:scale-[1.01]  text-white transition-colors duration-500  ${selectedBuyNow ? "bg-indigo-400 hover:bg-indigo-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#9514FA] hover:to-[#4F39F6]"}`}
       >
-        {selectedBuyNow ? "Selected" : "Buy Now"}
+        {selectedBuyNow ? "Added to cart" : "Buy Now"}
       </button>
     </div>
   );
