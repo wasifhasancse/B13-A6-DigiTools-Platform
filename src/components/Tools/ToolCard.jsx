@@ -70,7 +70,7 @@ const ToolCard = ({ toolData, selectedItems, setSelectedItems }) => {
 
       <button
         onClick={manageBuyNow}
-        className="mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold hover:scale-[1.01] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white transition-colors duration-500 hover:from-[#9514FA] hover:to-[#4F39F6]"
+        className={`mt-6 md:mt-6 lg:mt-8 w-full rounded-full py-3 md:py-2.5 lg:py-3.5 text-sm md:text-sm lg:text-base font-semibold hover:scale-[1.01]  text-white transition-colors duration-500  ${selectedBuyNow ? "bg-indigo-400 hover:bg-indigo-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#9514FA] hover:to-[#4F39F6]"}`}
       >
         {selectedBuyNow ? "Selected" : "Buy Now"}
       </button>
