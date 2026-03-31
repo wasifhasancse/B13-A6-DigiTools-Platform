@@ -8,7 +8,7 @@ const NavBar = ({ selectedItems }) => {
   const totalPrice = selectedItems.reduce((sum,item)=>sum+item.price,0)
   return (
     <nav>
-      <div className="navbar sticky container mx-auto bg-base-100 shadow-sm px-2 sm:px-4 md:px-5 py-2 min-h-0">
+      <div className="navbar mx-auto bg-base-100 shadow-sm px-2.5 md:px-5 py-2 min-h-0">
         <div className="navbar-start gap-1 sm:gap-2">
           <div className="dropdown">
             <div
@@ -53,7 +53,7 @@ const NavBar = ({ selectedItems }) => {
               </li>
             </ul>
           </div>
-          <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl font-black">
+          <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl md:text-2xl lg:text-3xl font-black">
             DigiTools
           </a>
         </div>
@@ -81,11 +81,11 @@ const NavBar = ({ selectedItems }) => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle h-9 w-9 sm:h-10 sm:w-10 transition-colors duration-300 hover:text-violet-600"
+              className="btn btn-ghost btn-circle h-6 w-6 md:h-10 md:w-10 transition-colors duration-300 hover:text-violet-600"
             >
               <div className="indicator">
 
-                <MdOutlineShoppingCart className="text-2xl" />
+                <MdOutlineShoppingCart className="text-xl md:text-2xl" />
                 <span className={`${selectedItems.length > 0 && 'bg-red-400 text-white badge badge-sm indicator-item'}`}>{selectedItems.length>0&& selectedItems.length}</span>
               </div>
             </div>

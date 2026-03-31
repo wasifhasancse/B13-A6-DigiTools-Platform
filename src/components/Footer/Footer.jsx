@@ -161,7 +161,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-12 border-t border-white/10 pt-4 md:pt-6 flex flex-col md:items-start md:justify-start lg:flex-row lg:items-center lg:justify-between gap-3 md:gap-4 lg:gap-5 text-xs md:text-sm text-gray-500">
+        <div className="mt-8 md:mt-12 border-t border-white/10 pt-4 md:pt-6 flex flex-col md:items-start md:justify-between md:flex-row lg:items-center gap-3 md:gap-4 lg:gap-5 text-xs md:text-sm text-gray-500">
           <p className="text-center md:text-left">
             © 2026 Digitools. All rights reserved.
           </p>

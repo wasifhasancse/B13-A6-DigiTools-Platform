@@ -1,11 +1,12 @@
 # DigiTools Platform
 
-- React
-- Vite
-- Tailwind CSS
-- DaisyUI
+> A simple digital tools platform project made with React.
 
-A modern digital tools marketplace web app where users can explore products, add items to a cart, and complete a quick checkout flow with clean, responsive UI sections.
+---
+
+## About The Project
+
+This is my Assignment 6 project. I built this website to show digital tools in a clean way where users can browse products, add items to cart, and check out easily. I focused on making the UI simple, responsive, and easy to use.
 
 ## Technology Used
 
@@ -16,8 +17,16 @@ A modern digital tools marketplace web app where users can explore products, add
 - React Toastify
 - React Icons
 
-## Top 3 Features
+## Key Features
 
-1. Product and cart toggle experience with a dynamic cart count in the navbar.
-2. Smart cart actions including add, remove, and proceed-to-checkout with toast notifications.
-3. Fully responsive multi-section landing layout including hero, stats, workflow, steps, pricing, and footer.
+1. **Interactive Cart System**
+   Users can add and remove products from cart and see updates instantly.
+
+2. **Smart Add to Cart + Checkout Flow**
+   One selected item cannot be added two times at a time. If user tries to add the same product again, it shows an "Item already in cart!" toast message. Also, when user clicks "Proceed To Checkout", all selected cart items are cleared and a success message is shown.
+
+3. **Responsive Multi-Section Landing Experience**
+   The page includes hero, stats, workflow, steps, pricing, and footer sections, and all sections are responsive for mobile, tablet, and desktop devices.
+
+---
+

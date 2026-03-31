@@ -16,27 +16,34 @@ const getToolsDataPromise = async () => {
 const toolsDataPromise = getToolsDataPromise();
 
 function App() {
-
-  const [selectedItems, setSelectedItems] = useState([])
+  const [selectedItems, setSelectedItems] = useState([]);
 
   return (
     <>
-      <NavBar selectedItems={selectedItems}/>
-      <Hero />
-      <StatsSection />
-      <Suspense
-        fallback={
-          <div>
-            <span className="loading loading-spinner text-error loading-xl"></span>
-          </div>
-        }
-      >
-        <Tools toolsDatasPromise={toolsDataPromise} selectedItems={selectedItems} setSelectedItems={setSelectedItems} />
-      </Suspense>
+      <header className="sticky top-0 z-10">
+        <NavBar selectedItems={selectedItems} />
+      </header>
+      <main>
+        <Hero />
+        <StatsSection />
+        <Suspense
+          fallback={
+            <div>
+              <span className="loading loading-spinner text-error loading-xl"></span>
+            </div>
+          }
+        >
+          <Tools
+            toolsDatasPromise={toolsDataPromise}
+            selectedItems={selectedItems}
+            setSelectedItems={setSelectedItems}
+          />
+        </Suspense>
 
-      <StepsSection />
-      <Pricing />
-      <WorkFlow />
+        <StepsSection />
+        <Pricing />
+        <WorkFlow />
+      </main>
       <Footer />
     </>
   );
