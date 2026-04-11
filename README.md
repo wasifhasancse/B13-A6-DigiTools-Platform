@@ -6,7 +6,7 @@
 
 ## About The Project
 
-This is my Assignment 6 project. I built this website to show digital tools in a clean way where users can browse products, add items to cart, and check out easily. I focused on making the UI simple, responsive, and easy to use.
+This is my Assignment 6 project. I built this website to showcase digital tools in a clean, user-friendly way, where users can browse products, add items to their cart, and check out easily. I focused on making the UI simple, responsive, and easy to use.
 
 ## Technology Used
 
